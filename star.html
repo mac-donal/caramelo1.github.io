@@ -1,0 +1,43 @@
+
+<html lang="en">
+<head>
+        
+     
+                  
+<script type="text/javascript">
+         function getParameterByName(name) {
+             name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+             var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                 results = regex.exec(location.search);
+             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+         }
+          id = getParameterByName('p');
+         if(getParameterByName('embed')){
+            embed = getParameterByName('embed');
+         }else{
+            if(getParameterByName('r')){
+                embed = getParameterByName('r');
+             }else{
+                embed = false;
+         }  
+         }
+
+      </script>
+
+
+</div>
+
+
+<div class="video">
+<script type="text/javascript">
+                    if (embed) {document.write('<iframe sandbox="allow-same-origin allow-top-navigation allow-forms allow-scripts"  class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen width="100%" height="100%" src="'+atob(embed)+'" scrolling="no" frameBorder="0" allowfullscreen width="100%" height="100%"></iframe>');}else{document.write('<img class="embed-responsive-item" src="https://img82.pixhost.to/images/0/329272052_error.png" width="100%">')}
+                        </script>
+</div>
+</div>
+</div>
+</div>
+  
+
+</body>
+
+</html>
